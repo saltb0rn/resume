@@ -1,0 +1,22 @@
+module.exports = {
+    lhsData: [
+        {
+            title: 'Example Title 1',
+            content: 'Example content 1'
+        },
+        {
+            title: 'Example Title 2',
+            content: 'Example content 2'
+        }
+    ],
+    rhsData: [
+        {
+            title: 'Example Title 3',
+            content: 'Example content 3'
+        },
+        {
+            title: 'Example Title 4',
+            content: 'Example content 4'
+        }
+    ]    
+};

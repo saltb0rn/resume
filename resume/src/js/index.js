@@ -6,34 +6,18 @@ import Vue from "vue";
 
 import Resume from "../view/Resume.vue";
 
+let Data;
+
 try {
-    var Data = require("./data");
+    Data = require("./data");
 } catch (e) {
-    var Data = {
-        lhsData: [
-            {
-                title: 'Example Title 1',
-                content: 'Example content 1'
-            },
-            {
-                title: 'Example Title 2',
-                content: 'Example content 2'
-            }
-        ],
-        rhsData: [
-            {
-                title: 'Example Title 3',
-                content: 'Example content 3'
-            },
-            {
-                title: 'Example Title 4',
-                content: 'Example content 4'
-            }
-        ]
+    Data = {
+        lhsData: [],
+        rhsData: []
     };
 }
 
-var app = new Vue(
+new Vue(
     {
         el: "#app",
         template: `
@@ -42,11 +26,8 @@ var app = new Vue(
             Resume
         },
         data: {
-            lhsData: [],
-            rhsData: []
+            lhsData: Data.lhsData,
+            rhsData: Data.rhsData
         }
     }
 );
-
-app.lhsData = Data.lhsData;
-app.rhsData = Data.rhsData;
