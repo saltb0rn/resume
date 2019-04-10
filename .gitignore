@@ -1,0 +1,6 @@
+/dist/
+/resume/node_modules/
+/resume/src/js/data.js
+/resume/\.package-json-tpl
+\.gitignore-tpl
+__pycache__/

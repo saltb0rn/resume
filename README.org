@@ -1,0 +1,8 @@
+*** Purpose
+    该项目为个人简历模板,免得每次写简历都要头疼排版.
+
+*** 用法
+    1. 修改 =resume/src/js/data.js= 文件的数据,数据格式参考 =resume/src/js/index= 的 =Data= 变量
+    2. 如果有 =docker= 就直接运行 =docker-compose up= 然后在浏览器打开 http://localhost:8000
+    3. 如果没有 =docker= 可以在 =resume= 目录下执行 =npm run dev=, 然后在浏览器打开 http://localhost:8080
+    4. 浏览器推荐用 =Chrome= (测试过火狐,发现 =Chrome= 生成 =pdf= 效果好一点),用浏览器 =(Ctrl-p)= 保存页面为 =pdf=.
